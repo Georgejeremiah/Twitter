@@ -57,7 +57,7 @@ public class TwitterPoruka {
 	 * override-ovana metoda toString
 	 */
 	public String toString() {
-		return "KORISNIK" + korisnik + "PORUKA" + poruka;
+		return "KORISNIK "+korisnik+" PORUKA "+ poruka;
 	}
 	
 }
