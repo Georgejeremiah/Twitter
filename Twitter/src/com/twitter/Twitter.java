@@ -35,7 +35,7 @@ import com.twitter.poruka.TwitterPoruka;
       * @return metoda vraca niz poruka koje sadrze uneti tag
       */
     public TwitterPoruka[] vratiPoruke(int maxBroj, String tag){
-    	if(tag==null || tag.isEmpty()){
+    	if(tag==null || tag.equals(" ")){
     		throw new RuntimeException("Morate uneti tag");}
     	if(maxBroj<=0){
     		          maxBroj=100;}
@@ -44,7 +44,7 @@ import com.twitter.poruka.TwitterPoruka;
     	for(int i=0;i<poruke.size();i++){
     		if(poruke.get(i).getPoruka().indexOf(tag)!=-1){
     			if(brojac<maxBroj){
-    				rezultat[brojac+1]=poruke.get(i);
+    				rezultat[brojac]=poruke.get(i);
     				brojac++;
     				}
     			}
