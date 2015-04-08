@@ -53,5 +53,9 @@ import com.twitter.poruka.TwitterPoruka;
     	}
     	return rezultat;
     }
+	public LinkedList<TwitterPoruka> getPoruke() {
+		return poruke;
+	}
+	
 
 }
